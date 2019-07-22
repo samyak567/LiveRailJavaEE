@@ -1,0 +1,405 @@
+All requests below were made using the Postman app.
+
+
+Request for live train status-> https://api.railwayapi.com/v2/live/train/12070/station/R/date/18-06-2019/apikey/2ycnlafqug/
+
+
+Response -> 
+
+{
+    "debit": 2,
+    "train": {
+        "classes": [
+            {
+                "available": "N",
+                "code": "SL",
+                "name": "SLEEPER CLASS"
+            },
+            {
+                "available": "N",
+                "code": "3E",
+                "name": "3rd AC ECONOMY"
+            },
+            {
+                "available": "Y",
+                "code": "2S",
+                "name": "SECOND SEATING"
+            },
+            {
+                "available": "Y",
+                "code": "CC",
+                "name": "AC CHAIR CAR"
+            },
+            {
+                "available": "N",
+                "code": "FC",
+                "name": "FIRST CLASS"
+            },
+            {
+                "available": "N",
+                "code": "2A",
+                "name": "SECOND AC"
+            },
+            {
+                "available": "N",
+                "code": "3A",
+                "name": "THIRD AC"
+            },
+            {
+                "available": "N",
+                "code": "1A",
+                "name": "FIRST AC"
+            }
+        ],
+        "number": "12070",
+        "days": [
+            {
+                "code": "MON",
+                "runs": "Y"
+            },
+            {
+                "code": "TUE",
+                "runs": "Y"
+            },
+            {
+                "code": "WED",
+                "runs": "Y"
+            },
+            {
+                "code": "THU",
+                "runs": "Y"
+            },
+            {
+                "code": "FRI",
+                "runs": "Y"
+            },
+            {
+                "code": "SAT",
+                "runs": "N"
+            },
+            {
+                "code": "SUN",
+                "runs": "Y"
+            }
+        ],
+        "name": "G - RIG JANSHATABDI"
+    },
+    "response_code": 200,
+    "position": "Yet to start from Train Source",
+    "status": {
+        "actarr_date": "18-06-2019",
+        "schdep": "17:50",
+        "actdep": "17:50",
+        "latemin": 0,
+        "has_departed": false,
+        "has_arrived": false,
+        "scharr": "17:45",
+        "actarr": "17:45",
+        "scharr_date": "18-06-2019"
+    },
+    "station": {
+        "name": "RAIPUR JN",
+        "code": "R",
+        "lng": 81.62964130000002,
+        "lat": 21.2513844
+    },
+    "start_date": "18-06-2019"
+}
+-------------------------------------------------------------------------------------------------------------------------------------
+
+Request for train route -> https://api.railwayapi.com/v2/route/train/12070/apikey/2ycnlafqug/ 
+
+
+Response ->
+{
+    "train": {
+        "classes": [
+            {
+                "available": "N",
+                "code": "SL",
+                "name": "SLEEPER CLASS"
+            },
+            {
+                "available": "N",
+                "code": "3E",
+                "name": "3rd AC ECONOMY"
+            },
+            {
+                "available": "Y",
+                "code": "2S",
+                "name": "SECOND SEATING"
+            },
+            {
+                "available": "Y",
+                "code": "CC",
+                "name": "AC CHAIR CAR"
+            },
+            {
+                "available": "N",
+                "code": "FC",
+                "name": "FIRST CLASS"
+            },
+            {
+                "available": "N",
+                "code": "2A",
+                "name": "SECOND AC"
+            },
+            {
+                "available": "N",
+                "code": "3A",
+                "name": "THIRD AC"
+            },
+            {
+                "available": "N",
+                "code": "1A",
+                "name": "FIRST AC"
+            }
+        ],
+        "number": "12070",
+        "days": [
+            {
+                "code": "MON",
+                "runs": "Y"
+            },
+            {
+                "code": "TUE",
+                "runs": "Y"
+            },
+            {
+                "code": "WED",
+                "runs": "Y"
+            },
+            {
+                "code": "THU",
+                "runs": "Y"
+            },
+            {
+                "code": "FRI",
+                "runs": "Y"
+            },
+            {
+                "code": "SAT",
+                "runs": "N"
+            },
+            {
+                "code": "SUN",
+                "runs": "Y"
+            }
+        ],
+        "name": "G - RIG JANSHATABDI"
+    },
+    "response_code": 200,
+    "route": [
+        {
+            "halt": -1,
+            "distance": 0,
+            "schdep": "15:00",
+            "no": 1,
+            "scharr": "SOURCE",
+            "station": {
+                "name": "GONDIA JN",
+                "code": "G",
+                "lng": 80.2209773,
+                "lat": 21.4624491
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 73,
+            "schdep": "16:04",
+            "no": 2,
+            "scharr": "16:02",
+            "station": {
+                "name": "DONGARGARH",
+                "code": "DGG",
+                "lng": 80.7602394,
+                "lat": 21.1802432
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 104,
+            "schdep": "16:28",
+            "no": 3,
+            "scharr": "16:26",
+            "station": {
+                "name": "RAJ NANDGAON",
+                "code": "RJN",
+                "lng": 81.0302222,
+                "lat": 21.0971034
+            },
+            "day": 1
+        },
+        {
+            "halt": 5,
+            "distance": 134,
+            "schdep": "17:10",
+            "no": 4,
+            "scharr": "17:05",
+            "station": {
+                "name": "DURG",
+                "code": "DURG",
+                "lng": 81.2849169,
+                "lat": 21.1904494
+            },
+            "day": 1
+        },
+        {
+            "halt": 5,
+            "distance": 169,
+            "schdep": "17:50",
+            "no": 5,
+            "scharr": "17:45",
+            "station": {
+                "name": "RAIPUR JN",
+                "code": "R",
+                "lng": 81.62964130000002,
+                "lat": 21.2513844
+            },
+            "day": 1
+        },
+        {
+            "halt": 1,
+            "distance": 207,
+            "schdep": "18:25",
+            "no": 6,
+            "scharr": "18:24",
+            "station": {
+                "name": "TILDA",
+                "code": "TLD",
+                "lng": -89.9955727,
+                "lat": 32.6417072
+            },
+            "day": 1
+        },
+        {
+            "halt": 1,
+            "distance": 233,
+            "schdep": "18:45",
+            "no": 7,
+            "scharr": "18:44",
+            "station": {
+                "name": "BHATAPARA",
+                "code": "BYT",
+                "lng": 81.948026,
+                "lat": 21.73837
+            },
+            "day": 1
+        },
+        {
+            "halt": 10,
+            "distance": 279,
+            "schdep": "19:50",
+            "no": 8,
+            "scharr": "19:40",
+            "station": {
+                "name": "BILASPUR JN",
+                "code": "BSP",
+                "lng": 82.1391412,
+                "lat": 22.0796251
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 306,
+            "schdep": "20:13",
+            "no": 9,
+            "scharr": "20:11",
+            "station": {
+                "name": "AKALTARA",
+                "code": "AKT",
+                "lng": 82.4238122,
+                "lat": 22.0244638
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 321,
+            "schdep": "20:27",
+            "no": 10,
+            "scharr": "20:25",
+            "station": {
+                "name": "JANJGIR NAILA",
+                "code": "NIA",
+                "lng": 82.56997659999999,
+                "lat": 22.0193063
+            },
+            "day": 1
+        },
+        {
+            "halt": 5,
+            "distance": 332,
+            "schdep": "20:43",
+            "no": 11,
+            "scharr": "20:38",
+            "station": {
+                "name": "CHAMPA",
+                "code": "CPH",
+                "lng": -78.7845612,
+                "lat": 35.9056009
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 348,
+            "schdep": "20:54",
+            "no": 12,
+            "scharr": "20:52",
+            "station": {
+                "name": "BARADWAR",
+                "code": "BUA",
+                "lng": 82.81828,
+                "lat": 22.01259
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 364,
+            "schdep": "21:07",
+            "no": 13,
+            "scharr": "21:05",
+            "station": {
+                "name": "SAKTI",
+                "code": "SKT",
+                "lng": 82.96023869999999,
+                "lat": 22.0237859
+            },
+            "day": 1
+        },
+        {
+            "halt": 2,
+            "distance": 379,
+            "schdep": "21:20",
+            "no": 14,
+            "scharr": "21:18",
+            "station": {
+                "name": "KHARSIA",
+                "code": "KHS",
+                "lng": 83.09763889999999,
+                "lat": 21.9893055
+            },
+            "day": 1
+        },
+        {
+            "halt": -1,
+            "distance": 413,
+            "schdep": "DEST",
+            "no": 15,
+            "scharr": "22:00",
+            "station": {
+                "name": "RAIGARH",
+                "code": "RIG",
+                "lng": 83.39496319999999,
+                "lat": 21.8974003
+            },
+            "day": 1
+        }
+    ],
+    "debit": 1
+}
