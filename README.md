@@ -15,5 +15,3 @@ Technologies to be used :-
 1. Front-end : Angular
 2. Back-end : Spring MVC (using RESTful API)
 3. Database : NoSQL
-
-This is the line just for testing purpose time pass kar raha hu.
